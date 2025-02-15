@@ -5,7 +5,7 @@ import os
 import skimage.io as io
 import skimage.transform as trans
 from PIL import Image
-from cv2 import *
+#from cv2 import *
 """
 Description:
 This code is the first network U-CARfnet data processing, including:
@@ -104,5 +104,3 @@ def saveResult(save_path, save_dict, npyfile, more_name=""):
 
 if __name__=='__main__':
     generator = trainGenerator(2, "./data1/train", "image", "label" )
-    for i in generator:
-        print(i)
